@@ -184,7 +184,6 @@ abstract class BaseFragment : Fragment(), CoroutineScope, FragmentContract, Dyna
                         reloadTextSize()
                     }
                     REQUEST_ENABLE_IMAGES -> {
-
                     }
                 }
             }
@@ -226,21 +225,11 @@ abstract class BaseFragment : Fragment(), CoroutineScope, FragmentContract, Dyna
     }
 
     override fun reloadTheme() {
-        reloadThemeSelf()
         content?.reloadTextSize()
-    }
-
-    override fun reloadThemeSelf() {
-        // intentionally blank
     }
 
     override fun reloadTextSize() {
-        reloadTextSizeSelf()
         content?.reloadTextSize()
-    }
-
-    override fun reloadTextSizeSelf() {
-        // intentionally blank
     }
 
     override fun onBackPressed(): Boolean = content?.core?.onBackPressed() ?: false

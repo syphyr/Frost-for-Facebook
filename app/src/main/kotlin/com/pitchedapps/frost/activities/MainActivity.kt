@@ -20,7 +20,6 @@ import android.os.Bundle
 import androidx.viewpager.widget.ViewPager
 import ca.allanwang.kau.utils.withMainContext
 import com.google.android.material.tabs.TabLayout
-import com.pitchedapps.frost.db.TAB_COUNT
 import com.pitchedapps.frost.facebook.FbItem
 import com.pitchedapps.frost.kotlin.subscribeDuringJob
 import com.pitchedapps.frost.utils.L
