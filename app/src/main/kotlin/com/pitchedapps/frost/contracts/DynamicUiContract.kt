@@ -41,4 +41,6 @@ interface DynamicUiContract {
      * Change text size without propagation
      */
     fun reloadTextSizeSelf()
+
+
 }

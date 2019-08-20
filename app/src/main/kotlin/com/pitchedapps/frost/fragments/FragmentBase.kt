@@ -36,6 +36,7 @@ import com.pitchedapps.frost.facebook.FbItem
 import com.pitchedapps.frost.utils.ARG_URL
 import com.pitchedapps.frost.utils.L
 import com.pitchedapps.frost.utils.Prefs
+import com.pitchedapps.frost.utils.REQUEST_ENABLE_IMAGES
 import com.pitchedapps.frost.utils.REQUEST_REFRESH
 import com.pitchedapps.frost.utils.REQUEST_TEXT_ZOOM
 import com.pitchedapps.frost.utils.frostEvent
@@ -181,6 +182,9 @@ abstract class BaseFragment : Fragment(), CoroutineScope, FragmentContract, Dyna
                     }
                     REQUEST_TEXT_ZOOM -> {
                         reloadTextSize()
+                    }
+                    REQUEST_ENABLE_IMAGES -> {
+
                     }
                 }
             }
