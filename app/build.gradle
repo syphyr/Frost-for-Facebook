@@ -350,3 +350,9 @@ task createGithubReleaseApk {
     tasks.findByName('testGithubReleaseApk').mustRunAfter 'lintGithubReleaseApk'
     tasks.findByName('assembleGithubReleaseApk').mustRunAfter 'testGithubReleaseApk'
 }
+
+bugsnag {
+    autoUpload false
+    ndk false
+    autoReportBuilds false
+}
