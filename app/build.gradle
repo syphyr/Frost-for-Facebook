@@ -351,8 +351,8 @@ task createGithubReleaseApk {
     tasks.findByName('assembleGithubReleaseApk').mustRunAfter 'testGithubReleaseApk'
 }
 
-bugsnag {
-    autoUpload false
-    ndk false
-    autoReportBuilds false
-}
+//bugsnag {
+//    autoUpload false
+//    ndk false
+//    autoReportBuilds false
+//}
